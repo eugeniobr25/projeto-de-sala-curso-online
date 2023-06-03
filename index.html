@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title>Curso Online de Gastronomia</title>
+</head>
+<body>
+    <!-- Vai conter o nome do dono do projeto -->
+    <header>
+        <h1 id="escola">Simple Kitchen</h1>
+        <h2 id="chef">Unknown Chef</h2>
+    </header>
+    <!-- Barra de navegação do site -->
+    <nav>
+        <!-- Link do Conteudo -->
+        <a href="#conteudo">Conteúdo</a>
+        <!-- Link do Sobre -->
+        <a href="#sobre">Sobre</a>
+        <!-- Link do Contato -->
+        <a href="#contatos">Contatos</a>
+        <!-- Link do Cadastro -->
+        <a href="cadastro.html">Cadastro</a>
+    </nav>
+    <!-- Conteúdo do site -->
+    <main>
+        <!-- Mini bio, informações simplificadas-->
+        <section id="mini-bio" class="mini-bio">
+            <video 
+            class="video-bio"
+            src="./assets/midia/sobre.mp4" 
+            playsinline autoplay loop muted
+            >
+            </video>
+            <div class="container text-bio">
+                <h2>Comida de verdade</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore dicta quisquam sint. Quo mollitia excepturi omnis, fugit laudantium repellat ullam deserunt facere quos vel? Neque atque ad nisi vel!</p>
+            </div>
+        </section>
+        <!-- Conteudo -->
+        <section id="conteudo" class="conteudo">
+            <div class="container">
+                <h2 class="aula">Aula inaugural</h2>
+                <!-- atributo controls mostra os controles de video -->
+                <video controls>
+                    <source src="./assets/midia/video.mp4">
+                </video>
+                <h2 class="aula">Audio</h2>
+                <audio controls>
+                    <source src="./assets/midia/audio.mp3">
+                </audio>
+            </div>
+        </section>
+        <!-- Sobre -->
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <h3 class="aula">Sobre</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae quis totam maxime iure recusandae modi quas ab aliquam eaque distinctio rerum mollitia, minus tempora est voluptate magni nam vel.</p>
+                <hr>
+                <h3 class="aula">Objetivos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure consequatur sapiente natus vitae tenetur error nihil aspernatur saepe dolores, illo laudantium quae ex explicabo. Eos error aperiam earum reprehenderit repellat?</p>
+            </div>
+        </section>
+        <!-- Contatos -->
+        <section id="contatos" class="contatos">
+            <div class="container">
+                <h3>Contatos</h3>
+                <!-- email -->
+                <a href="mailto:eugeniobrilhante@hotmail.com">
+                    <h4><img src="./assets/icons/email.png" alt="email">E-mail</h4>
+                </a>
+                <!-- telefone -->
+                <a href="tel:5585997223359">
+                    <h4><img src="./assets/icons/telefone.png" alt="telefone">Telefone</h4>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Outras informações -->
+    <footer>
+        &copy; 2023 Eugenio Brilhante. Quase todos os direitos reservados.
+    </footer>
+</body>
+</html>
