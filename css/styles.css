@@ -1,66 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Grand+Hotel&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
     margin: 0;
+    
 }
 
-.container{
-    max-width: 800px;
+.container {
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
-
+    padding: 10px 15px;
+    background-color: #bb0622;
 }
+
 /* Vai conter o nome do dono do projeto */
 header {
-    background-color: navy;
-    background: linear-gradient(120deg, navy, black);
-    padding: 20px;
-    color: white;
+    background: #bb0622;
     text-align: center;
 }
 
 #escola {
-    font-family:'Grand Hotel', cursive;
-    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    padding: 2%;
     color: yellow;
-    text-shadow: -1px -1px 10px gray;
-    -webkit-text-stroke-color: orangered;
-    -webkit-text-stroke-width: 0.1px;
+    text-shadow: -3px 3px 10px black;
     letter-spacing: 3px;
-}
-#chef {
-    font-size: 20px;
-    padding-left: 130px;
-    color: greenyellow;
-    text-shadow: -1px -1px 10px gray;
-    font-family:'Chilanka', cursive;
 }
 
 nav {
-    background-color: blue;
-    background: linear-gradient(120deg, navy,black);
-    padding: 10px;
-    color: white;
+    background: #b3110c;
+}
+nav div {
+    padding: 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 nav a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
-    color: white;
     padding: 8px;
     margin: 10px;
     background: transparent;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    width: 150px;
-    height: 150px;
+    color: black;
+    background-color: #e80700;
+    box-shadow: -2px 3px 0 #222;
+    border-radius: 20px;
+    width: 80px;
+    height: 20px;
+    font-size: 15px;
 }
 
 nav a:hover {
-    background: lightblue;
-    transition: .5s;
+    box-shadow: inset -2px 2px 0 #222;
+    font-size: 14px;
+
 }
 
 /* class da section do video mini-bio */
@@ -68,7 +66,8 @@ nav a:hover {
     position: relative;
     display: grid;
     place-items: center;
-    padding: 1%;
+    padding: 5%;
+    background:;
 }
 
 /* class da tag video video-bio */
@@ -79,20 +78,30 @@ video.video-bio {
     height: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
-    opacity: 0.6; 
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
     z-index: 0;
 }
 
 .mini-bio div {
     z-index: 1;
+    background: white;
 }
 
 .text-bio {
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    opacity: 0.7;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.text-bio h2 {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color: lightgrey;
-    
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
 }
 
 .conteudo video {
@@ -101,10 +110,9 @@ video.video-bio {
 
 .aula {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 5px;
-    background: linear-gradient(120deg, blue, black);
-    color: lightgrey;
+    font-family: 'Playfair Display', serif;
+    padding: 2%;
+    color: black;
 }
 
 .sobre {
@@ -117,7 +125,7 @@ video.video-bio {
     background: #444;
     color: lightgray;
     border-radius: 5px;
-    
+
 }
 
 .contatos img {
