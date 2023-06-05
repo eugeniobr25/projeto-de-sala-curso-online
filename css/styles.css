@@ -3,19 +3,19 @@
 * {
     padding: 0;
     margin: 0;
-    
+
 }
 
 .container {
     max-width: 100%;
     margin: 0 auto;
     padding: 10px 15px;
-    background-color: #bb0622;
+    background-color: #fff;
 }
 
 /* Vai conter o nome do dono do projeto */
 header {
-    background: #bb0622;
+    background: #fff;
     text-align: center;
 }
 
@@ -29,8 +29,9 @@ header {
 }
 
 nav {
-    background: #b3110c;
+    background: #fff;
 }
+
 nav div {
     padding: 0;
     text-align: center;
@@ -47,16 +48,15 @@ nav a {
     margin: 10px;
     background: transparent;
     color: black;
-    background-color: #e80700;
-    box-shadow: -2px 3px 0 #222;
-    border-radius: 20px;
+    background-color: #d8d8d8;
+    border-radius: 2px;
     width: 80px;
     height: 20px;
     font-size: 15px;
 }
 
 nav a:hover {
-    box-shadow: inset -2px 2px 0 #222;
+    box-shadow: inset;
     font-size: 14px;
 
 }
@@ -67,7 +67,7 @@ nav a:hover {
     display: grid;
     place-items: center;
     padding: 5%;
-    background:;
+    background: ;
 }
 
 /* class da tag video video-bio */
@@ -111,21 +111,66 @@ video.video-bio {
 .aula {
     text-align: center;
     font-family: 'Playfair Display', serif;
-    padding: 2%;
     color: black;
+    background-color: #d8d8d8;
+    border-radius: 2px;
+    font-size: 25px;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
+}
+
+.audio {
+    width: 30%;
+    margin-left: 35%;
 }
 
 .sobre {
     background: #555;
-    color: lightgray;
-    border-radius: 5px;
+    color: black;
+}
+
+.sobre p {
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    font-size: 20px;
+}
+
+.sobre h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.link {
+    text-align: center;
+}
+
+.objetivos img {
+    width: 100%;
+    height: 600px;
+    z-index: 0;
+    position: relative;
+    
+}
+
+.objetivos p {
+    padding: 3%;
+    margin: 5%;
+    margin-block-start: 200px;
+    margin-block-end: 20px;
+    z-index: 1;
+    position: absolute;
+    background: #fff;
+    opacity: 0.7;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+    font-size: 30px;
 }
 
 .contatos {
     background: #444;
-    color: lightgray;
+    color: black;
     border-radius: 5px;
-
 }
 
 .contatos img {
@@ -133,8 +178,10 @@ video.video-bio {
 }
 
 .contatos a {
-    color: white;
+    color: black;
     text-decoration: none;
+    text-align: left;
+    letter-spacing: 3px;
 }
 
 .contatos a:hover {
@@ -147,4 +194,8 @@ footer {
     background: #333;
     color: whitesmoke;
     text-align: center;
+}
+
+footer img {
+    width: 20px;
 }
