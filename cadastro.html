@@ -4,15 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/stylescadastro.css">
+    <title>Cadastro do Aluno</title>
 </head>
 <body>
-    nome 
-    <br>
-    idade
-    <br>
-    email
-    <br>
-    endereço (cep, )
+    <header>
+        <nav>
+            <a href="cadastro.html">Cadastro do Aluno</a>
+        </nav>
+    </header>
+    <main>
+        <div id="cliente">
+            <label for="nome" class="nome">Nome do aluno(a):<input id="nome" class="cliente" type="text" required></label>
+            <label for="email">E-mail:<input id="email" class="cliente" type="email" required></label>
+            <label for="idade">Idade:<input id="idade" class="cliente" type="number" required></label>
+        </div>
+
+        <div id="endereco">
+            <label for="cep">CEP:<input id="cep" class="endereco" type="text" required></label>
+            <label for="estado">Estado:<select id="estado" class="endereco" name="estado" required></select></label>
+            <label for="cidade">Cidade<input id="cidade" class="endereco" type="text" required></label>
+            <label for="rua">Rua<input id="rua" class="endereco" type="text" required></label>
+            <label for="">Numero<input id="numero" class="endereco" type="text" required></label>
+        </div>
+
+        <div id="pagamento">
+            <label for="numerocartao">Numero do cartão<input id="numerocartao" class="pagamento" type="text" required></label>
+            <label for="numerocartao">Nome do cartão<input id="nomecartao" class="pagamento" type="text" required></label>
+            <label for="validade">Validade do cartão<input id="validade" class="pagamento" type="text" required></label>
+            <label for="cvv">CVV<input id="cvv" class="pagamento" type="text" required></label>
+        </div>
+
+        <input type="submit">
+
+    </main>
+
+
+
+
+
+    <script src="./js/scripts.js"></script>
 </body>
+
 </html>
