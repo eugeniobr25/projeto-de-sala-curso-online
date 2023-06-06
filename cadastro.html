@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,98 @@
     <link rel="stylesheet" href="./css/stylescadastro.css">
     <title>Cadastro do Aluno</title>
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <a href="cadastro.html">Cadastro do Aluno</a>
         </nav>
     </header>
     <main>
-        <div id="cliente">
-            <label for="nome" class="nome">Nome do aluno(a):<input id="nome" class="cliente" type="text" required></label>
-            <label for="email">E-mail:<input id="email" class="cliente" type="email" required></label>
-            <label for="idade">Idade:<input id="idade" class="cliente" type="number" required></label>
-        </div>
+        <form class="container">
+            <h1>Informações do Aluno</h1>
+            <div id="cliente">
+                <div><label for="nome">Nome do aluno(a) *</label><input id="nome" class="cliente" type="text" required
+                        placeholder="Digite seu nome">
+                </div>
+                <div><label for="email">E-mail *<input id="email" class="cliente" type="email" required
+                            placeholder="Digite seu e-mail"></label>
+                </div>
+                <div><label for="idade">Idade<input id="idade" class="cliente" type="number"
+                            placeholder="Digite sua idade"></label>
+                </div>
+            </div>
+            <h1>Endereço</h1>
+            <div id="endereco">
+                <div><label for="cep">CEP *<input id="txtcep" class="endereco" type="text" required
+                            placeholder="Digite seu CEP"></label></div>
+                <div><label for="estado">Estado *<select id="txtestado" class="endereco" name="estado" required>
+                            <option value="0">- Selecione seu estado -</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select></label></div>
+                <div><label for="cidade">Cidade *<input id="txtcidade" class="endereco" type="text" required
+                            placeholder="Digite sua cidade"></label>
+                </div>
+                <div><label for="rua">Rua *<input id="txtrua" class="endereco" type="text" required
+                            placeholder="Digite sua rua"></label></div>
+                <div><label for="rua">Bairro *<input id="txtbairro" class="endereco" type="text" required
+                            placeholder="Digite seu bairro"></label></div>
+                <div><label for="numero">Numero *<input id="numero" class="endereco" type="text" required
+                            placeholder="Digite seu numero"></label>
+                </div>
+                <div><label for="complemento">Complemento<input id="complemento" class="endereco" type="text"
+                            placeholder="Digite o complemento do seu endereço"></label>
+                </div>
+            </div>
+            <h1>Pagamento</h1>
+            <div id="pagamento">
+                <div><label for="numerocartao">Numero do cartão *<input id="numerocartao" class="pagamento" type="text"
+                            required placeholder="Digite o numero do seu cartão"></label></div>
+                <div><label for="numerocartao">Nome do cartão *<input id="nomecartao" class="pagamento" type="text"
+                            required placeholder="Digite o nome igual como está no cartão"></label></div>
+                <div><label for="validade">Validade do cartão *<input id="validade" class="pagamento" type="text"
+                            required placeholder="Digite a validade do seu cartão"></label></div>
+                <div><label for="cvv">CVV *<input id="cvv" class="pagamento" type="text" required
+                            placeholder="Digite o CVV do seu cartão"></label></div>
+                <div><label>Clique na imagem para obte ajuda com as informações do cartão</label><a
+                        href="https://www.foregon.com/media/uploads/2019/11/image.png" target="_blank"><img
+                            src="./assets/icons/cartao.png" alt="Localização das informações do cartão de credito"></a>
+                </div>
+            </div>
 
-        <div id="endereco">
-            <label for="cep">CEP:<input id="cep" class="endereco" type="text" required></label>
-            <label for="estado">Estado:<select id="estado" class="endereco" name="estado" required></select></label>
-            <label for="cidade">Cidade<input id="cidade" class="endereco" type="text" required></label>
-            <label for="rua">Rua<input id="rua" class="endereco" type="text" required></label>
-            <label for="">Numero<input id="numero" class="endereco" type="text" required></label>
-        </div>
-
-        <div id="pagamento">
-            <label for="numerocartao">Numero do cartão<input id="numerocartao" class="pagamento" type="text" required></label>
-            <label for="numerocartao">Nome do cartão<input id="nomecartao" class="pagamento" type="text" required></label>
-            <label for="validade">Validade do cartão<input id="validade" class="pagamento" type="text" required></label>
-            <label for="cvv">CVV<input id="cvv" class="pagamento" type="text" required></label>
-        </div>
-
-        <input type="submit">
+            <div id="finalizar">
+                <input id="bt-cadastro" type="submit" value="Finalizar Cadastro">
+            </div>
+        </form>
 
     </main>
-
-
-
-
-
     <script src="./js/scripts.js"></script>
 </body>
 
