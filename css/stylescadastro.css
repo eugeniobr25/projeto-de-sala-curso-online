@@ -93,7 +93,7 @@ nav {
 
 #bt-cadastro {
     background: #d8d8d8;
-    width: 300px;
+    width: 80%;
     height: 50px;
     font-weight: bold;
 }
@@ -101,8 +101,12 @@ nav {
 #bt-cadastro:hover {
     background: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
-#pagamento img {
-    width: 20%;
+#pagamento a {
+    font-size: 15px;
+    background: #fff;
+    color: blue;
+    cursor: pointer;
 }
